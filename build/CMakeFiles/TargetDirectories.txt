@@ -1,4 +1,0 @@
-/root/Workspace/Projects/ZenFramework/build/CMakeFiles/zenframework.dir
-/root/Workspace/Projects/ZenFramework/build/CMakeFiles/logger_example.dir
-/root/Workspace/Projects/ZenFramework/build/CMakeFiles/edit_cache.dir
-/root/Workspace/Projects/ZenFramework/build/CMakeFiles/rebuild_cache.dir
