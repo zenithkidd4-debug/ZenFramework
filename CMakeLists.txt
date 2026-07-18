@@ -13,6 +13,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_library(zenframework
     src/Logger.cpp
+    src/Timer.cpp
+    src/FileSystem.cpp
 )
 
 target_include_directories(zenframework
@@ -23,7 +25,21 @@ target_include_directories(zenframework
 add_executable(logger_example
     examples/logger_example.cpp
 )
+add_executable(timer_example
+    examples/timer_example.cpp
+)
+add_executable(filesystem_example
+    examples/filesystem_example.cpp
+)
 
+target_link_libraries(filesystem_example
+    PRIVATE
+        zenframework
+)
+target_link_libraries(timer_example
+    PRIVATE
+        zenframework
+)
 target_link_libraries(logger_example
     PRIVATE
         zenframework)
